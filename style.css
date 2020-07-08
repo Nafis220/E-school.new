@@ -270,7 +270,10 @@ px      68    160    252    */
 	.left{
 		height: 200px;
 	}
-
+.contact-box-wrap
+{
+   padding: 20px 20px ;
+}
 
 
 
