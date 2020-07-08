@@ -1,0 +1,333 @@
+
+
+.container
+{
+    margin-bottom: 100px;
+}
+button
+{
+    background-color: #21B573;
+    color: bisque;
+    padding: 7px ;
+    width: 103px;
+    border: 1px solid #21B573;
+    border-radius: 22px;
+}
+button:hover
+{
+    background-color: white;
+    color: blueviolet;
+    border: 1px solid blueviolet;
+}
+                           /*Navbar*/
+.bg-light
+{
+    background-color: #F0FFF0 !important;
+}
+                             /*Navbar*/
+                             /*header*/
+
+.get_started
+{
+    background-color: #21B573;
+    color: bisque;
+    padding: 7px ;
+    width: 135px;
+    border: 1px solid #21B573;
+    border-radius: 22px;
+}
+                                /*header*/
+
+                                
+#boxs .card 
+{
+    width: 100%!important;
+    border: none;
+    background-color:#F8FFFB;
+    min-height: 250px !important;
+}        
+#boxs .card:hover
+{
+    box-shadow: 3px 3px 30px lightgray;
+    width: 270px;
+    
+}    
+
+/*Online Courses*/
+
+
+.card-footer
+{
+    border-top: 0px;
+    background-color: white ;
+    padding: 8px 12px;
+}
+.card-deck .card
+{
+    border: none;
+    box-shadow: 3px 3px 30px lightgray;
+    border-radius: 10px;
+
+}
+/*Footer part*/
+
+
+.footer-half-part
+{
+    margin-right: 13%;
+}
+
+.blog img
+{
+    width: 30%;
+    margin-left: 45%;
+}
+.blog h5
+{
+    display: inline;
+}
+.footer_container
+{
+  
+    background-color: #282531;
+    color: white;
+   
+}
+
+.container-footer-bg
+{
+    margin-bottom: 0px;
+padding-top: 50px ;
+}
+ul li 
+{
+    list-style: none;
+    text-align: justify;
+}
+footer h5
+{
+    text-align: justify;
+    padding-left: 40px;
+}
+
+/*Contact Us*/
+
+
+.contact-box-wrap{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 100px;
+}
+
+.contact-box-wrap:after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: url("img/bg.jpg") no-repeat center;
+	background-size: cover;
+	filter: blur(50px);
+	z-index: -1;
+}
+.contact-box{
+	max-width: 850px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #beadce;
+	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+}
+
+.left{
+	background: url("img/Photos/contactusheader.jpg") no-repeat center;
+	background-size:cover;
+	height: 100%;
+}
+
+.right{
+	padding: 25px 40px;
+}
+
+.contact-box-wrap h2{
+	position: relative;
+	padding: 0 0 10px;
+	margin-bottom: 10px;
+}
+
+.contact-box-wrap h2:after{
+	content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: blue;
+}
+
+.field{
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+}
+
+.field:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea{
+	min-height: 150px;
+}
+
+.btn{
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background-color: #314439;
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.btn:hover{
+    background-color: #27ae60;
+}
+
+.field:focus{
+    border: 2px solid rgba(30,85,250,0.47);
+    background-color: #fff;
+}
+
+
+
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+
+@media only screen and (min-width: 768px) and (max-width: 900px) {
+    .contact-box{
+		grid-template-columns: 1fr;
+	}
+	.left{
+		height: 200px;
+	}
+
+
+.card-deck{
+
+    margin-right: -85px;
+    margin-left: -15px;
+}
+
+}
+
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (max-width: 767px) {
+
+    #boxs .col-md-3
+    {
+        width: 50% !important ;
+    }
+    #online-courses .card
+    {
+        min-width: 100%;
+    }
+    .blog img {
+    margin-left: 36%;
+    margin-bottom: 30px;
+    }
+
+    .contact-box{
+		grid-template-columns: 1fr;
+	}
+	.left{
+		height: 200px;
+	}
+
+
+
+
+
+}
+
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+#boxs .col-md-3
+{
+    width: 50% !important ;
+}
+#online-courses .card
+{
+    min-width: 100%;
+}
+.blog img {
+margin-left: 36%;
+margin-bottom: 30px;
+}
+
+
+}
+/*	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------    */
+
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+
+        #boxs .col-md-3
+        {
+            width: 50% !important ;
+        }
+        #online-courses .card
+        {
+            min-width: 30%;
+        }
+        .blog img {
+        margin-left: 36%;
+        margin-bottom: 30px;
+        }
+        
+        
+
+
+
+
+
+    }
